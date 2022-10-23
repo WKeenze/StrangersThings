@@ -1,0 +1,154 @@
+html{
+    background-color: rgb(75, 75, 75);
+    font-family: 'Ubuntu', sans-serif;
+}
+#header{
+    display: flex;
+    /* justify-content: center; */
+    background-color: #131921;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
+   /* flex-direction: column; */
+}
+
+
+#navbar{
+    display: flex;
+    background-color: #232f3e;
+    align-items:center;
+    justify-content: flex-end;
+    padding: 5px;
+
+}
+
+
+#navbutton{
+    background-color:#232f3e ;
+    color:white;
+    border: 1px solid #232f3e;
+    /* padding: 10px 20px; */
+    margin: 3px;
+}
+
+#navbutton a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid #232f3e;
+    
+  }
+#navbutton a:hover {
+    border: 1px solid white;
+
+}
+ 
+#button{
+    height: 4rem;
+    width: 6rem;
+    border: 1px solid black;
+    margin:1rem;
+    border-radius: 15px;
+    box-shadow: 5px 3px 10px black;
+    font-size: 15px;  
+}
+
+#titleDiv{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 50%;
+    min-width: 400px;
+
+}
+
+#mainBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#postsList{
+    width: 50%;
+    min-width: 400px;
+    height: auto;
+    border-bottom: 1px gray solid;
+    margin: .1rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius:5px;
+    background-color: rgb(204, 204, 207);
+    box-shadow: 10px 10px 10px black;  
+}
+
+#title{
+    font-size: 2rem;
+    color: white;
+}
+#search{
+    height:2rem;
+    width:20rem;
+    font-size: 16px;
+
+}
+
+/* #detailSales{ */
+    /* display: flex; */
+   
+/* width: 50%;
+min-width: 400px;
+height: auto;
+border-bottom: 1px gray solid;
+margin: .5rem;
+padding-left: 10px;
+border-radius: 25px;
+background-color: navy;
+color: white;
+box-shadow: 5px 3px black; */
+
+/* } */
+
+#message{
+    height:2rem;
+    width:20rem;
+    font-size: 16px;
+}
+#newForm{
+    display:flex;
+    justify-content: center;
+    border-radius: 25px;
+    align-items:center;
+}
+
+#newUserForm{
+    display: flex;
+    padding:15px;
+    flex-direction: column;
+}
+
+#createLabel{
+   padding: 5px;
+    font-size: 16px;
+}
+
+#hotPosts{
+    /* display: flex; */
+   
+    width: 50%;
+    min-width: 400px;
+    height: auto;
+    border-bottom: 1px gray solid;
+    margin: .5rem;
+    padding-left: 10px;
+    border-radius: 25px;
+    background-color: orangered;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    
+}
+
