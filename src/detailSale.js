@@ -12,8 +12,6 @@ const DetailSale = () => {
 
     const thisSale = details[forSale];
 
-    
-
     return (
         <div id='mainBody'>
             {
@@ -27,11 +25,10 @@ const DetailSale = () => {
                     <p>Asking Price: {thisSale.price}</p>
                     <button id='button'><Link to='/posts'> Return to Posts </Link></button>
                     <button id='button'><Link to={`/${forSale}/${thisSale._id}`}> Send Message </Link></button>
-                 </div>
+                </div>
                 : <p>This item is currently unavailable.</p>
             }
-           </div>
-        
+        </div>
     )
 };
 

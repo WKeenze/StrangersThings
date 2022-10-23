@@ -84,9 +84,6 @@ const Create = () => {
                     <input id='deliver' type="checkbox" onChange={updateWillDeliverState}>
                     </input> 
                 </label>
-                
-                    
-
 
                 <button id='button'type="submit">Submit Posts</button>
             </form>

@@ -75,9 +75,7 @@ const fetchProfileData = async() => {
         
                 }
             })
-        
-    
-            
+                 
     const data = await response.json(); 
         console.log("Translated data: ", data)
 
@@ -111,7 +109,6 @@ const logout = () => {
                         <h3>Welcome {`${username}`}</h3>
                         <h3>Not You<button id='logoutButton' onClick={logout}>Log Out</button></h3>
                     </div>
-                    {/* <Profile fetchProfileData={fetchProfileData}/>  */}
                 </div>
                
             <div><Navbar /></div>

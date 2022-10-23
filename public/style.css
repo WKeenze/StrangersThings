@@ -4,12 +4,10 @@ html{
 }
 #header{
     display: flex;
-    /* justify-content: center; */
     background-color: #131921;
     color: white;
     justify-content: space-between;
     padding: 10px;
-   /* flex-direction: column; */
 }
 
 
@@ -19,7 +17,6 @@ html{
     align-items:center;
     justify-content: flex-end;
     padding: 5px;
-
 }
 
 
@@ -27,7 +24,7 @@ html{
     background-color:#232f3e ;
     color:white;
     border: 1px solid #232f3e;
-    /* padding: 10px 20px; */
+
     margin: 3px;
 }
 
@@ -61,10 +58,8 @@ html{
     display:flex;
     flex-direction: column;
     align-items: center;
-    
     width: 50%;
     min-width: 400px;
-
 }
 
 #mainBody{
@@ -94,24 +89,7 @@ html{
     height:2rem;
     width:20rem;
     font-size: 16px;
-
 }
-
-/* #detailSales{ */
-    /* display: flex; */
-   
-/* width: 50%;
-min-width: 400px;
-height: auto;
-border-bottom: 1px gray solid;
-margin: .5rem;
-padding-left: 10px;
-border-radius: 25px;
-background-color: navy;
-color: white;
-box-shadow: 5px 3px black; */
-
-/* } */
 
 #message{
     height:2rem;
@@ -137,8 +115,6 @@ box-shadow: 5px 3px black; */
 }
 
 #hotPosts{
-    /* display: flex; */
-   
     width: 50%;
     min-width: 400px;
     height: auto;

@@ -53,22 +53,28 @@ const SendMessage = () => {
             {
                 messageSeller.title && messageSeller.title.length ?
                 <div id='postsList'>
-                <h1>{messageSeller.title}</h1>
-                <p>Seller {messageSeller.author.username} writes:</p>
-                <p>{messageSeller.description}</p>
-                <p>Will Deliver: {messageSeller.willDeliver ? ' Yes' : ' No'}</p>
-                <p>Asking Price: {messageSeller.price}</p>
-                <form id='sendMessageForm' onSubmit={sendForm}>
-                    <label id='messageLabel'>Message: 
-                    <input id='message' type="text" value={content} onChange={updateSendMessage}></input>
-                    </label>
-                    <br />
-                    <button id='button'type="submit">Submit Message</button>
-                    <button id='button'><Link to='/posts'> Return to Posts </Link></button>
-                </form>
+                    <h1>{messageSeller.title}</h1>
+                
+                    <p>Seller {messageSeller.author.username} writes:</p>
+                
+                    <p>{messageSeller.description}</p>
+                
+                    <p>Will Deliver: {messageSeller.willDeliver ? ' Yes' : ' No'}</p>
+                
+                    <p>Asking Price: {messageSeller.price}</p>
+                    <form id='sendMessageForm' onSubmit={sendForm}>
+                        <label id='messageLabel'>Message: 
+                        <input id='message' type="text" value={content} onChange={updateSendMessage}></input>
+                        </label>
+                        
+                        <br />
+                        
+                        <button id='button'type="submit">Submit Message</button>
+                        <button id='button'><Link to='/posts'> Return to Posts </Link></button>
+                    </form>
              
                 
-            </div> 
+                </div> 
                 : <p>This item is currently unavailable.</p>
             }
            

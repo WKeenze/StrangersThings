@@ -41,13 +41,9 @@ const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login />
-            },
-           
-            
-            
+            },   
         ]
     }
-
 ])
 
     ReactDOM.render(<RouterProvider router={router} />, document.getElementById("app")); 

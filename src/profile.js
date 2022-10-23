@@ -33,7 +33,6 @@ async function deletePosts (profilePosts) {
     
 }
 
-   
     return (
         <div>
              <div id='mainBody'>
