@@ -1,11 +1,14 @@
 import React, {useState} from "react";
-import  {Link} from 'react-router-dom';
-import { useOutletContext} from "react-router-dom";
+
+import { useOutletContext, useNavigate} from "react-router-dom";
 
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState(""); 
     const [, , , , , , , fetchProfileData, fetchPostsData, userCheck]= useOutletContext()
+    const navigate = useNavigate()
+
+
     async function formSubmitHandler (event) {
         event.preventDefault(); 
         try {
@@ -31,6 +34,7 @@ const Login = () => {
         setUsername ("");
         setPassword ("");
         alert(data.data.message);
+        navigate('/profile');
         userCheck()
         fetchProfileData()
         fetchPostsData()
@@ -67,6 +71,7 @@ const Login = () => {
             userCheck()
             fetchProfileData()
             fetchPostsData()
+            navigate('/profile');
             
         } catch (error) {
             console.log(error); 

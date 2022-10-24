@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import { useOutletContext, useParams, Link } from "react-router-dom";
+import Profile from "./profile";
 
 const SendMessage = () => {
-    const [detail,,,,,,, fetchProfileData, fetchPostsData, userCheck]  = useOutletContext();
+    const [detail,,profile,,,,, fetchProfileData, fetchPostsData, userCheck]  = useOutletContext();
     const [content, setContent] = useState("");
     // console.log ('Detailed Sales list:', detail)
 
@@ -11,8 +12,10 @@ const SendMessage = () => {
     // console.log("Params: ", useParams())
     // console.log("This is our parameter: ", forSale)
 
-    const messageSeller = detail[forSale]; 
-
+    const messageSeller = detail.filter((detail) => {
+        return detail._id === forSale
+    })[0]; 
+console.log(messageSeller)
     async function sendForm (event) {
         event.preventDefault(); 
 
@@ -68,8 +71,10 @@ const SendMessage = () => {
                         </label>
                         
                         <br />
-                        
-                        <button id='button'type="submit">Submit Message</button>
+                        {messageSeller.author._id != profile._id && (
+                             <button id='button'type="submit">Submit Message</button>
+                        )}
+                       
                         <button id='button'><Link to='/posts'> Return to Posts </Link></button>
                     </form>
              

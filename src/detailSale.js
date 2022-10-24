@@ -10,7 +10,11 @@ const DetailSale = () => {
     // console.log("This is the params obj: ", useParams())
     // console.log("This is our parameter: ", forSale)
 
-    const thisSale = details[forSale];
+    // const thisSale = details[forSale];
+    const thisSale = details.filter((detail) => {
+        return detail._id === forSale
+    })[0];
+
 
     return (
         <div id='mainBody'>

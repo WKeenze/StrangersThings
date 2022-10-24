@@ -17,7 +17,7 @@ const Posts = () => {
              <div id='titleDiv'>
                 <p id='title'>Posts:</p>
                 <input id='search' type='text' onChange={event => setSearch(event.target.value)} placeholder='Search Posts...'></input>
-{/* when searching posts it brings you to the wrong idx */}
+
             </div>
                 {
                     postsInfo && postsInfo.length ?  postsInfo.filter(indivPosts => {
@@ -33,9 +33,8 @@ const Posts = () => {
                                 <h3>{indivPosts.title}</h3>
                                 <p>Location: {indivPosts.location}</p>
                                
-                                <button id='postsButton'><Link to={`/posts/${idx}`}>More Details!!!</Link></button>
-
-                        
+                                <button id='postsButton'><Link to={`/posts/${indivPosts._id}`}>More Details!!!</Link></button>
+                                
                         </div>
                     }) : <div>ERRRRRRRRRRRRRROOOOOOOORRRR.</div>
                 }

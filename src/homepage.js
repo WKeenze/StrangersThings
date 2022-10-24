@@ -7,7 +7,7 @@ import Create from "./createPosts";
 
 const Homepage = () => {
     const [posts, setPosts] = useState([])
-    const [profileItems, setProfile] = useState("");
+    const [profileItems, setProfile] = useState({});
     const [messaged, setMessaged] = useState("");
     const [username, setUserName] = useState([])
 

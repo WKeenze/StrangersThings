@@ -6,8 +6,9 @@ import { useOutletContext, Link } from "react-router-dom";
 const Profile = () => {
 
     const [posts, setPosts, profile, setProfile, messaged, setMessaged, username, fetchProfileData, fetchPostsData]= useOutletContext()
-   const myPosts = profile.posts
-   const myMessages = profile.messages
+    // debugger
+   const myPosts = profile ? profile.posts : null;
+   const myMessages = profile ? profile.messages : null;
 // console.log(messaged)
 
 async function deletePosts (profilePosts) {
